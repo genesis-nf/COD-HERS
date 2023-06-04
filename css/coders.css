@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap');
+
+* {
+    margin: 0px;
+    font-family: 'Jost', sans-serif;
+}       
+
+
+/* Encabezado */
+
+header {
+    height: 100px;
+    background-color: #FF7F99;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 3%
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav_button {
+    border: transparent;
+    background: transparent;
+    color: white;
+    font-size: 24px;
+    padding: 3px 40px 3px 40px;
+    border-radius: 16px;
+}
+
+.nav_button:hover {
+    background: #FBE7B4;   
+}
+
+/* Sección principal landing page */
+
+main {
+    display:flex;
+    justify-content:space-evenly;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.imagen_principal{
+    background: #FF7F99;
+    width: 40%;
+    height: 40%;
+    border-radius: 50% 0% 50% 50%;
+}
+
+.imagen_principal img{
+    width: 98%;
+    margin-left: 4px; 
+    margin-top: 8px;   
+}
+
+.texto{
+    width: 40%;
+}
+
+.titulo {
+    margin-top: 40px;
+    font-size: 85px;
+    color: #FF7F99;
+    line-height: .8;
+}
+
+.subtitulo {
+    font-size: 22px;
+    font-weight: 400px;
+    margin-top: 12px;
+    margin-bottom: 22px;
+}
+
+.texto p{
+    text-align: justify;
+    width: 80%;
+}
+
+.contact{
+    margin-top: 30px;
+    display: flex;
+} 
+
+.contact img{
+    width: 40px;
+    margin-right: 15px;
+}
+
+.main_button {
+    border-radius: 40px;
+    border-style: none;
+    height: 40px;
+    width: 170px;
+    background: #ffca41;
+    color: white;
+    font-size: 15px;
+}
+
+/* Pie de página */
+
+footer {
+    display: grid;
+    background: #FF7F99;
+    grid-template-columns: repeat(5, 20%)
+}
+
+.coder {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    margin: 70px 0px;
+}
+
+.coder a{
+    font-size: 22px;
+}
+
+.coder p {
+    font-size: 16px;
+    color: black;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.img_coder {
+    width: 100%;
+    height: 242px;
+    margin: center;
+    border-radius: 50%;
+}
+
+.integrantes{
+    width: 100%;
+    padding: auto;
+    height: 100%;
+}
+
+
+.linkedin {
+    width: 40px;
+    height: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: white;    
+}
+
+/* PAGINA RESPONSIVE */
+
+@media (max-width: 750px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-bottom: 1px;
+        height: 200px;
+        justify-content: center;
+    }
+
+    nav {
+        flex-direction: column;
+        display: flex;
+    }
+
+    
+    .logo{
+        justify-content: center;
+    }
+    
+    .logo img {
+        margin: auto;
+        padding: auto;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto{
+        width: 100%;
+        margin: 10px  0px;
+    }
+
+    .texto  p{
+        margin:auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .contact{
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+        width: 100%;
+        
+    }
+
+  
+    .main_button {
+        border-radius: 40px;
+        border-style: none;
+        background: #ffca41;
+        color:white;
+        font-size: 17px;
+        font-weight: 700px;
+        padding: 10px 30px;
+        position: relative;
+    }
+
+    .imagen_principal{
+        width: 95%;
+        height: 370px;
+        margin: 0px 8px;
+    }
+
+    .imagen_principal img{
+        margin-top: 2px;
+        margin-left: 6px;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+
+}

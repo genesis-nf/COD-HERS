@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap');
+
+* {
+    margin: 0px;
+    font-family: 'Jost', sans-serif;
+}
+
+:root {
+    --main-bg-color: white;
+    --secondary-bg-color: #FF7F99;
+    --button-bg-color: #ffca41;
+    --button-hoover-color: #FBE7B4;
+    --main-text-color: black;
+    --title-text-color: #FF7F99;
+    --secondary-text-color: white;
+}
+
+
+/* Encabezado */
+
+header {
+    height: 100px;
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 3%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav_button {
+    border: transparent;
+    background: transparent;
+    color: var(--secondary-text-color);
+    font-size: 24px;
+    padding: 3px 40px 3px 40px;
+    border-radius: 16px;
+}
+
+.nav_button:hover {
+    background: var(--button-hoover-color)
+}
+
+/* Sección principal landing page */
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.imagen_principal {
+    background: var(--secondary-bg-color);
+    width: 40%;
+    height: 500px;
+    border-radius: 50% 0% 50% 50%;
+}
+
+.imagen_principal img {
+    width: 95%;
+    height: 95%;
+    border-radius: 90%;
+    margin-left: 15px;
+    margin-top: 12px;
+}
+
+.texto {
+    width: 40%;
+}
+
+.titulo {
+    margin-top: 90px;
+    font-size: 85px;
+    color: var(--secondary-bg-color);
+    line-height: .8;
+}
+
+.subtitulo {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.main_button {
+    border-radius: 40px;
+    border-style: none;
+    background: var(--button-bg-color);
+    color: var(--secondary-text-color);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 35px;
+    position: absolute;
+    margin-top: 23px;
+}
+
+.main_button:hover {
+    background-color: var(--button-hoover-color);
+}
+
+/* Sección principal página desarrolladores */
+
+.texto_coder {
+    width: 453px;
+    position: relative;
+}
+
+.descripcion {
+    text-align: justify;
+}
+
+.linkedin-coder {
+    width: 45px;
+    height: 45px;
+    margin-top: 25px;
+    margin-right: 15px;
+}
+
+.main_button2 {
+    border-radius: 30px;
+    border-color: var(--secondary-text-color);
+    background: var(--button-bg-color);
+    color: var(--secondary-text-color);
+    font-size: 15px;
+    font-weight: 700;
+    position: absolute;
+    padding: 3px 50px 15px 50px;
+    margin-top: 25px;
+}
+
+/* Pie de página */
+
+footer {
+    display: grid;
+    background: var(--secondary-bg-color);
+    grid-template-columns: repeat(5, 20%)
+}
+
+.coder {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: var(--secondary-text-color);
+    margin: 70px 0px;
+}
+
+.coder a {
+    font-size: 22px;
+}
+
+.coder p {
+    font-size: 16px;
+    color: var(--main-text-color);
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.img_coder {
+    width: 100%;
+    height: 242px;
+    margin: center;
+    border-radius: 50%;
+}
+
+.integrantes {
+    width: 100%;
+    padding: auto;
+    height: 100%;
+}
+
+
+.linkedin {
+    width: 40px;
+    height: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+@media (max-width: 750px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-bottom: 1px;
+        height: 200px;
+        justify-content: center;
+    }
+
+    nav {
+        flex-direction: column;
+        display: flex;
+    }
+    
+    .logo img {
+        margin: auto;
+        padding: auto;
+    }
+
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    
+    .texto{
+        width: 100%;
+        text-align:center;
+    }
+
+    .titulo {
+        margin-top: 15px;
+        font-size: 55px;
+        color: var(--secondary-bg-color);
+        line-height: .8;
+    }
+    
+    .subtitulo {
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 12px;
+    }
+
+    .main_button {
+        border-radius: 40px;
+        border-style: none;
+        background: var(--button-bg-color);
+        color: var(--secondary-text-color);
+        font-size: 20px;
+        font-weight: 700;
+        padding: 20px 35px;
+        position: relative;
+        margin-top: 23px;
+        
+    }
+
+
+
+    .imagen_principal{
+        width: 95%;
+        height: 370px;
+        margin: 70px 8px;
+    }
+
+    .imagen_principal img{
+        margin-top: 7px;
+        margin-left: 10px;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+
+}
